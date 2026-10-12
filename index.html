@@ -306,95 +306,19 @@
       border-color: #1a2a67;
     }
 
-    /* ── Portfolio Cards ── */
-    .portfolio-card {
-      background: var(--white);
-      border: 1px solid var(--pink-100);
-      border-radius: 16px;
-      overflow: hidden;
-      margin-bottom: 1.5rem;
-      transition: box-shadow 0.2s;
-    }
-    .portfolio-card:hover {
-      box-shadow: 0 6px 24px rgba(212, 86, 122, 0.1);
-    }
-    .portfolio-hero {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      display: block;
-      cursor: pointer;
-    }
-    .portfolio-body {
-      padding: 1.5rem 1.8rem 1.6rem;
-    }
-    .portfolio-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-      margin-bottom: 0.15rem;
-    }
-    .portfolio-header h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--gray-900);
-    }
-    .portfolio-header .date {
-      font-size: 0.82rem;
-      color: var(--gray-500);
-    }
-    .portfolio-subtitle {
-      font-size: 0.9rem;
-      color: var(--pink-600);
-      font-weight: 500;
-      margin-bottom: 0.7rem;
-    }
-    .portfolio-desc {
-      font-size: 0.9rem;
-      color: var(--gray-600);
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-    .tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 1rem;
-    }
-    .tech-tags span {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
-      background: var(--pink-50);
-      border: 1px solid var(--pink-200);
-      border-radius: 999px;
-      color: var(--pink-700);
-      font-weight: 500;
-    }
-    .portfolio-award {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      font-size: 0.82rem;
-      color: var(--pink-600);
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-    }
-
     /* ── Image Gallery ── */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 0.5rem;
-      margin-top: 0.2rem;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.6rem;
+      margin-top: 0.8rem;
     }
     .gallery figure {
       margin: 0;
     }
     .gallery img {
       width: 100%;
-      height: 120px;
+      height: 160px;
       object-fit: cover;
       border-radius: 8px;
       border: 1px solid var(--pink-100);
@@ -406,10 +330,10 @@
       box-shadow: 0 4px 12px rgba(212, 86, 122, 0.15);
     }
     .gallery figcaption {
-      font-size: 0.72rem;
+      font-size: 0.75rem;
       color: var(--gray-500);
       text-align: center;
-      margin-top: 0.25rem;
+      margin-top: 0.3rem;
       line-height: 1.3;
     }
 
@@ -611,118 +535,91 @@
     <h2>Projects</h2>
     <div class="section-line"></div>
 
-    <div class="portfolio-card">
-      <div class="portfolio-body">
-        <div class="portfolio-header">
-          <h3>Forge: a Sherman Center Program</h3>
-          <span class="date">September 2026 – Present</span>
-        </div>
-        <p class="portfolio-subtitle">Hardware Product Lab Member — Cooking Robot</p>
-        <p class="portfolio-desc">Forge is a student-led program within Northeastern's Michael J. and Ann Sherman Center for Engineering Entrepreneurship Education, where teams of six take a product from initial concept to physical prototype in a single semester. Our team conceived an automated ingredient dispensing system that measures preset quantities at the press of a button, designed to simplify home cooking. As the team's designated Electrical Engineer, I am designing PCB schematics in KiCad, 3D-modeling enclosures in SolidWorks, and programming embedded control logic in Arduino.</p>
-        <div class="tech-tags">
-          <span>KiCad</span>
-          <span>SolidWorks</span>
-          <span>Arduino</span>
-          <span>PCB Design</span>
-          <span>3D Printing</span>
-        </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Forge: a Sherman Center Program, Northeastern University</h3>
+        <span class="date">September 2026 – Present</span>
+      </div>
+      <p class="entry-role">Hardware Product Lab Member — Cooking Robot</p>
+      <ul>
+        <li>Forge is a student-led program within Northeastern's Michael J. and Ann Sherman Center for Engineering Entrepreneurship Education, where teams of six take a product from initial concept to physical prototype in a single semester</li>
+        <li>Conceived the product concept for our team: an automated ingredient dispensing system that measures preset quantities at the press of a button, designed to simplify home cooking</li>
+        <li>Serving as the team's designated Electrical Engineer, designing PCB schematics in KiCad, 3D-modeling enclosures in SolidWorks, and programming embedded control logic in Arduino</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Interactive Children's Museum Exhibit — Northeastern University</h3>
+        <span class="date">January – May 2026</span>
+      </div>
+      <p class="entry-role">Boston Children's Museum — Fun Labs</p>
+      <ul>
+        <li>Built an interactive exhibit as part of Northeastern's Fun Labs program, where first-year engineering teams design and code original electronic games that are exhibited at the Boston Children's Museum for families and kids to play-test</li>
+        <li>Designed and programmed the game logic in Python, integrating break-beam sensors, speakers, and LED arrays to teach mechanical engineering concepts to young visitors through hands-on play</li>
+        <li>Fabricated custom gears and pulley housings using laser cutting and 3D printing in SolidWorks, assembling the complete physical exhibit from scratch</li>
+      </ul>
+      <div class="gallery">
+        <figure><img src="images/museum-exhibit.jpg" alt="Motion Station exhibit at Boston Children's Museum" onclick="openLightbox(this)"><figcaption>Full exhibit at the museum</figcaption></figure>
+        <figure><img src="images/museum-closeup.png" alt="Motion Station gears and toy cars close-up" onclick="openLightbox(this)"><figcaption>Gears and toy cars close-up</figcaption></figure>
+        <figure><img src="images/museum-gears.jpg" alt="3D-printed gears detail" onclick="openLightbox(this)"><figcaption>3D-printed gears</figcaption></figure>
+        <figure><img src="images/museum-breadboard.png" alt="Breadboard prototype with LED strip and speaker" onclick="openLightbox(this)"><figcaption>Electronics prototype</figcaption></figure>
       </div>
     </div>
 
-    <div class="portfolio-card">
-      <img src="images/museum-exhibit.jpg" alt="Motion Station exhibit at Boston Children's Museum" class="portfolio-hero" onclick="openLightbox(this)">
-      <div class="portfolio-body">
-        <div class="portfolio-header">
-          <h3>Interactive Children's Museum Exhibit</h3>
-          <span class="date">January – May 2026</span>
-        </div>
-        <p class="portfolio-subtitle">Boston Children's Museum — Fun Labs</p>
-        <p class="portfolio-desc">Built an interactive exhibit as part of Northeastern's Fun Labs program, where first-year engineering teams design and code original electronic games that are then exhibited at the Boston Children's Museum for families and kids to play-test. I designed and programmed the game logic in Python, integrating break-beam sensors, speakers, and LED arrays to teach mechanical engineering concepts through hands-on play. I also fabricated custom gears and pulley housings using laser cutting and 3D printing in SolidWorks, assembling the complete physical exhibit from scratch.</p>
-        <div class="tech-tags">
-          <span>Python</span>
-          <span>SolidWorks</span>
-          <span>Laser Cutting</span>
-          <span>3D Printing</span>
-          <span>Sensors</span>
-        </div>
-        <div class="gallery">
-          <figure><img src="images/museum-closeup.png" alt="Motion Station gears and toy cars close-up" onclick="openLightbox(this)"><figcaption>Gears and toy cars</figcaption></figure>
-          <figure><img src="images/museum-gears.jpg" alt="3D-printed gears detail" onclick="openLightbox(this)"><figcaption>3D-printed gears</figcaption></figure>
-          <figure><img src="images/museum-breadboard.png" alt="Breadboard prototype with LED strip and speaker" onclick="openLightbox(this)"><figcaption>Electronics prototype</figcaption></figure>
-        </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>The Train Game — Northeastern University</h3>
+        <span class="date">October – December 2025</span>
+      </div>
+      <p class="entry-role">Cornerstone of Engineering Client Project</p>
+      <ul>
+        <li>Designed and built an interactive Netherlands-themed board game for a real client as the capstone project in Cornerstone of Engineering, Northeastern's required first-year engineering design course</li>
+        <li>Programmed the game logic in C on a Raspberry Pi Pico with embedded electronics including LEDs, buttons, and a speaker, and designed the control enclosure in AutoCAD</li>
+        <li>Selected as the client's favorite project among all competing teams at the end-of-semester Expo</li>
+      </ul>
+      <div class="gallery">
+        <figure><img src="images/train-game-design.png" alt="Train Game digital design" onclick="openLightbox(this)"><figcaption>Digital design render</figcaption></figure>
+        <figure><img src="images/train-game-built.webp" alt="Train Game painted board" onclick="openLightbox(this)"><figcaption>Painted game board</figcaption></figure>
+        <figure><img src="images/train-game-wiring.jpg" alt="Train Game electronics and wiring" onclick="openLightbox(this)"><figcaption>Electronics and wiring</figcaption></figure>
+        <figure><img src="images/train-game-final.jpg" alt="Train Game final board with controls" onclick="openLightbox(this)"><figcaption>Final board with controls</figcaption></figure>
+        <figure><img src="images/train-game-demo.jpg" alt="Train Game presentation demo" onclick="openLightbox(this)"><figcaption>Presentation demo</figcaption></figure>
       </div>
     </div>
 
-    <div class="portfolio-card">
-      <img src="images/train-game-final.jpg" alt="Train Game final board with controls" class="portfolio-hero" onclick="openLightbox(this)">
-      <div class="portfolio-body">
-        <div class="portfolio-header">
-          <h3>The Train Game</h3>
-          <span class="date">October – December 2025</span>
-        </div>
-        <p class="portfolio-subtitle">Cornerstone of Engineering Client Project</p>
-        <p class="portfolio-desc">Designed and built an interactive Netherlands-themed board game for a real client as the capstone project in Cornerstone of Engineering, Northeastern's required first-year engineering design course. I programmed the game logic in C on a Raspberry Pi Pico with embedded electronics including LEDs, buttons, and a speaker, and designed the control enclosure in AutoCAD. Our team's project was selected as the client's favorite among all competing teams at the end-of-semester Expo.</p>
-        <div class="tech-tags">
-          <span>C</span>
-          <span>Raspberry Pi Pico</span>
-          <span>AutoCAD</span>
-          <span>Embedded Systems</span>
-        </div>
-        <p class="portfolio-award">&#9733; Client's Favorite — End-of-Semester Expo</p>
-        <div class="gallery">
-          <figure><img src="images/train-game-design.png" alt="Train Game digital design" onclick="openLightbox(this)"><figcaption>Digital design</figcaption></figure>
-          <figure><img src="images/train-game-built.webp" alt="Train Game painted board" onclick="openLightbox(this)"><figcaption>Painted board</figcaption></figure>
-          <figure><img src="images/train-game-wiring.jpg" alt="Train Game electronics and wiring" onclick="openLightbox(this)"><figcaption>Wiring</figcaption></figure>
-          <figure><img src="images/train-game-demo.jpg" alt="Train Game presentation demo" onclick="openLightbox(this)"><figcaption>Presentation demo</figcaption></figure>
-        </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>GeoEngineers — Boston, MA</h3>
+        <span class="date">April – June 2025</span>
+      </div>
+      <p class="entry-role">Engineering Intern</p>
+      <ul>
+        <li>Interned at GeoEngineers, an employee-owned consulting firm of over 400 engineers specializing in geotechnical engineering, environmental science, and ecological services</li>
+        <li>Performed geotechnical field investigations including soil sampling, boring logs, groundwater monitoring, and site surveys across multiple project locations</li>
+        <li>Produced geotechnical drawings and material testing reports using AutoCAD, supporting active civil engineering projects</li>
+      </ul>
+      <div class="gallery">
+        <figure><img src="images/geo-1.jpg" alt="Site investigation with monitoring well" onclick="openLightbox(this)"><figcaption>Monitoring well inspection</figcaption></figure>
+        <figure><img src="images/geo-2.jpg" alt="Groundwater monitoring equipment at field site" onclick="openLightbox(this)"><figcaption>Groundwater sampling equipment</figcaption></figure>
+        <figure><img src="images/geo-3.jpg" alt="Excavator at field investigation site" onclick="openLightbox(this)"><figcaption>Field investigation site</figcaption></figure>
       </div>
     </div>
 
-    <div class="portfolio-card">
-      <img src="images/geo-1.jpg" alt="Site investigation with monitoring well" class="portfolio-hero" onclick="openLightbox(this)">
-      <div class="portfolio-body">
-        <div class="portfolio-header">
-          <h3>GeoEngineers</h3>
-          <span class="date">April – June 2025</span>
-        </div>
-        <p class="portfolio-subtitle">Engineering Intern — Boston, MA</p>
-        <p class="portfolio-desc">Interned at GeoEngineers, an employee-owned consulting firm of over 400 engineers specializing in geotechnical engineering, environmental science, and ecological services. I performed geotechnical field investigations including soil sampling, boring logs, groundwater monitoring, and site surveys across multiple project locations, and produced geotechnical drawings and material testing reports using AutoCAD to support active civil engineering projects.</p>
-        <div class="tech-tags">
-          <span>AutoCAD</span>
-          <span>Geotechnical Engineering</span>
-          <span>Field Investigation</span>
-          <span>Soil Sampling</span>
-        </div>
-        <div class="gallery">
-          <figure><img src="images/geo-2.jpg" alt="Groundwater monitoring equipment at field site" onclick="openLightbox(this)"><figcaption>Groundwater sampling</figcaption></figure>
-          <figure><img src="images/geo-3.jpg" alt="Excavator at field investigation site" onclick="openLightbox(this)"><figcaption>Field investigation site</figcaption></figure>
-        </div>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Intelligent Urban Infrastructure — Independent Research</h3>
+        <span class="date">September 2022 – Present</span>
       </div>
-    </div>
-
-    <div class="portfolio-card">
-      <div class="portfolio-body">
-        <div class="portfolio-header">
-          <h3>Intelligent Urban Infrastructure</h3>
-          <span class="date">September 2022 – Present</span>
-        </div>
-        <p class="portfolio-subtitle">Independent Research — IoT Traffic-Light Optimization</p>
-        <p class="portfolio-desc">Independently designed and built a wireless IoT traffic-light prototype using Arduino and C++, incorporating GPS, Bluetooth (BLE), and MQTT to detect vehicles and pedestrians by speed and dynamically adjust signal timing to reduce energy waste and improve safety. I tested the system across 20+ controlled trials, measuring energy savings and intersection throughput against fixed-timing baselines. I also extended the project into an interactive agent-based simulation in JavaScript that models a live intersection, allowing users to compare adaptive and fixed signal strategies in real time.</p>
-        <div class="tech-tags">
-          <span>Arduino</span>
-          <span>C++</span>
-          <span>JavaScript</span>
-          <span>GPS</span>
-          <span>Bluetooth (BLE)</span>
-          <span>MQTT</span>
-          <span>IoT</span>
-        </div>
-        <p class="portfolio-award">&#9733; 2nd Place — Massachusetts Regional Science Fair 2024</p>
-        <p class="portfolio-award">&#9733; US Air Force Award</p>
-        <div class="pdf-links">
-          <a href="images/traffic-light-research-year1.pdf" target="_blank">📄 Year 1 Research Paper</a>
-          <a href="images/traffic-light-research-2024.pdf" target="_blank">📄 Year 2 Research Paper</a>
-        </div>
+      <p class="entry-role">IoT Traffic-Light Optimization</p>
+      <ul>
+        <li>Independently designed and built a wireless IoT traffic-light prototype using Arduino (C++), incorporating GPS, Bluetooth (BLE), and MQTT to detect vehicles and pedestrians by speed and dynamically adjust signal timing to reduce energy waste and improve safety</li>
+        <li>Tested the system across 20+ controlled trials, measuring energy savings and intersection throughput against fixed-timing baselines</li>
+        <li>Placed 3rd (2023) and 2nd (2024) at the Massachusetts Regional Science Fair, received the US Air Force Award, and advanced to state-level competitions both years</li>
+        <li>Extended the project into an interactive agent-based simulation in JavaScript that models a live intersection, allowing users to compare adaptive and fixed signal strategies in real time</li>
+      </ul>
+      <div class="pdf-links">
+        <a href="images/traffic-light-research-year1.pdf" target="_blank">📄 Year 1 Research Paper</a>
+        <a href="images/traffic-light-research-2024.pdf" target="_blank">📄 Year 2 Research Paper</a>
       </div>
     </div>
   </section>
