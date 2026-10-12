@@ -281,6 +281,30 @@
       border-radius: 50%;
       background: var(--pink-300);
     }
+    .entry-with-logo {
+      display: flex;
+      gap: 1.4rem;
+      align-items: flex-start;
+    }
+    .entry-logo {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      object-fit: contain;
+      background: var(--white);
+      border: 1px solid var(--pink-100);
+      padding: 6px;
+      margin-top: 0.1rem;
+    }
+    .entry-logo-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .entry-logo-dark {
+      background: #1a2a67;
+      border-color: #1a2a67;
+    }
 
     /* ── Image Gallery ── */
     .gallery {
@@ -601,58 +625,93 @@
     <div class="section-line"></div>
 
     <div class="entry">
-      <div class="entry-header">
-        <h3>Northeastern University FYELIC MakerSpace</h3>
-        <span class="date">September 2026 – Present</span>
+      <div class="entry-with-logo">
+        <img src="images/northeastern-logo.png" alt="Northeastern University logo" class="entry-logo">
+        <div class="entry-logo-content">
+          <div class="entry-header">
+            <h3>Northeastern University FYELIC MakerSpace</h3>
+            <span class="date">September 2026 – Present</span>
+          </div>
+          <p class="entry-role">Makerspace Assistant — Red Vest Program</p>
+          <ul>
+            <li>Train first-year engineering students on safe operation of 3D printers, laser cutters, woodshop equipment, and hand tools in the First-Year Engineering Learning &amp; Innovation Center (FYELIC) on the 3rd floor of Snell Engineering</li>
+            <li>Serve as part of the Red Vest Program, bridging first-year students and the engineering program by providing hands-on fabrication guidance and troubleshooting support during Cornerstone of Engineering lab sessions</li>
+            <li>Maintain equipment, enforce safety protocols, and help students translate their CAD designs into physical prototypes for course projects</li>
+          </ul>
+        </div>
       </div>
-      <p class="entry-role">Makerspace Assistant</p>
-      <ul>
-        <li>Train first-year engineering students on safe operation of 3D printers, laser cutters, woodshop equipment, and hand tools in Northeastern's First-Year Engineering Learning &amp; Innovation Center</li>
-      </ul>
     </div>
 
     <div class="entry">
-      <div class="entry-header">
-        <h3>Northeastern University Undergraduate Admissions</h3>
-        <span class="date">May 2026 – Present</span>
+      <div class="entry-with-logo">
+        <img src="images/northeastern-logo.png" alt="Northeastern University logo" class="entry-logo">
+        <div class="entry-logo-content">
+          <div class="entry-header">
+            <h3>Northeastern University Undergraduate Admissions</h3>
+            <span class="date">May 2026 – Present</span>
+          </div>
+          <p class="entry-role">Husky Ambassador</p>
+          <ul>
+            <li>Selected into a group of approximately 200 undergraduate student leaders who represent Northeastern to prospective students and families year-round</li>
+            <li>Completed a four-week training program covering campus history, academic programs, and public speaking before becoming a certified tour guide</li>
+            <li>Lead 45–60 minute campus tours through residence halls, the student center, recreation facilities, research spaces, and main quads, alongside admissions information sessions</li>
+          </ul>
+        </div>
       </div>
-      <p class="entry-role">Husky Ambassador</p>
-      <ul>
-        <li>Lead daily campus tours for prospective students and families, representing Northeastern's Office of Undergraduate Admissions</li>
-      </ul>
     </div>
 
     <div class="entry">
-      <div class="entry-header">
-        <h3>Honors Events Council, Northeastern University</h3>
-        <span class="date">September 2026 – Present</span>
+      <div class="entry-with-logo">
+        <img src="images/northeastern-logo.png" alt="Northeastern University logo" class="entry-logo">
+        <div class="entry-logo-content">
+          <div class="entry-header">
+            <h3>Honors Events Council, Northeastern University</h3>
+            <span class="date">September 2026 – Present</span>
+          </div>
+          <p class="entry-role">Board Member — John Martinson Honors Program</p>
+          <ul>
+            <li>Plan and execute social and professional development events that strengthen the Honors community, connecting current students with alumni and faculty</li>
+            <li>Serve as Event Lead, managing logistics, budgets, vendor coordination, and marketing for co-curricular programming for upper-class Honors students</li>
+            <li>Part of the John Martinson Honors Program, a selective community focused on empowering students to create meaningful impact on campus and beyond</li>
+          </ul>
+        </div>
       </div>
-      <p class="entry-role">Board Member</p>
-      <ul>
-        <li>Plan and execute co-curricular events for upper-class students in the John Martinson Honors Program, managing logistics, budgets, and marketing as Event Lead</li>
-      </ul>
     </div>
 
     <div class="entry">
-      <div class="entry-header">
-        <h3>EVkids</h3>
-        <span class="date">January 2026 – Present</span>
+      <div class="entry-with-logo">
+        <img src="images/evkids-logo.png" alt="EVkids logo" class="entry-logo entry-logo-dark">
+        <div class="entry-logo-content">
+          <div class="entry-header">
+            <h3>EVkids</h3>
+            <span class="date">January 2026 – Present</span>
+          </div>
+          <p class="entry-role">Tutor Coordinator</p>
+          <ul>
+            <li>Coordinate Northeastern's cohort of 15+ volunteer tutors for EVkids, a Boston-based nonprofit (headquartered in Dorchester) that empowers inner-city youth with the skills and confidence to realize their potential</li>
+            <li>Recruit and train new tutors each semester, schedule weekly one-on-one mentoring sessions for academically vulnerable students in grades 3–12, and lead team meetings, reflections, and trainings</li>
+            <li>Serve as an active tutor, building long-term mentoring relationships with students through EVkids' after-school tutoring program</li>
+          </ul>
+        </div>
       </div>
-      <p class="entry-role">Tutor Coordinator</p>
-      <ul>
-        <li>Recruit and coordinate Northeastern's cohort of 15+ EVkids volunteer tutors, scheduling weekly 1-on-1 mentoring sessions for underserved students in grades 3–12 and leading team meetings, reflections and trainings</li>
-      </ul>
     </div>
 
     <div class="entry">
-      <div class="entry-header">
-        <h3>Community of Sant'Egidio</h3>
-        <span class="date">2019 – Present</span>
+      <div class="entry-with-logo">
+        <img src="images/santegidio-logo.svg" alt="Community of Sant'Egidio logo" class="entry-logo entry-logo-dark">
+        <div class="entry-logo-content">
+          <div class="entry-header">
+            <h3>Community of Sant'Egidio</h3>
+            <span class="date">2019 – Present</span>
+          </div>
+          <p class="entry-role">Community Volunteer</p>
+          <ul>
+            <li>Active volunteer with the Community of Sant'Egidio, a Catholic lay movement founded in Rome in 1968 and now present in over 73 countries with 60,000+ members worldwide</li>
+            <li>Participate in community service programs supporting refugees, the homeless, and elderly community members, including meal services, visits to care facilities, and Peace Schools for children</li>
+            <li>Engage in the organization's mission of social assistance, peaceful conflict resolution, and interreligious dialogue for peace</li>
+          </ul>
+        </div>
       </div>
-      <p class="entry-role">Community Volunteer</p>
-      <ul>
-        <li>Volunteer with a Catholic lay association supporting refugees and community members in need</li>
-      </ul>
     </div>
   </section>
 
