@@ -426,6 +426,7 @@
       <div class="contact-links">
         <a href="mailto:melodia.l@northeastern.edu">✉ Email</a>
         <a href="https://www.linkedin.com/in/ludovica-melodia" target="_blank">in LinkedIn</a>
+        <a href="Ludovica_Melodia_Portfolio.pdf" target="_blank">📄 Portfolio</a>
         <a href="#">📍 Boston, MA</a>
       </div>
     </div>
@@ -533,6 +534,9 @@
   <section class="section" id="projects">
     <h2>Projects</h2>
     <div class="section-line"></div>
+    <div class="pdf-links" style="margin-bottom: 1.2rem;">
+      <a href="Ludovica_Melodia_Portfolio.pdf" target="_blank">📄 View Full Engineering Portfolio (PDF)</a>
+    </div>
 
     <div class="entry">
       <div class="entry-header">
@@ -554,11 +558,10 @@
       </div>
       <p class="entry-role">GE 1502 Team Project — Client: Boston Children's Museum</p>
       <ul>
+        <li>The Boston Children's Museum commissioned our four-person team to design an interactive exhibit that teaches mechanical engineering to children ages 4–8, themed around Europe and the Pixar film <i>Cars</i></li>
         <li>I built all of the electronics and wrote the MicroPython code: a Raspberry Pi Pico polls a break beam sensor every 50 ms, and when the car passes, it streams a WAV file I created of "Life is a Highway" over I2S to a MAX98357A class D amplifier and speaker while animating an addressable LED strip, updating the LEDs every 8th audio chunk so the Pico isn't overloaded</li>
         <li>I designed the enclosures, gears, and internal supports in AutoCAD, then laser-cut, painted, and assembled the Italy-themed box and all of its components</li>
-        <li>The Boston Children's Museum commissioned our four-person team to design an interactive exhibit that teaches mechanical engineering to children ages 4–8, themed around Europe and the Pixar film <i>Cars</i></li>
         <li>Children mount nine interchangeable plywood spur gears (4, 9, and 14 cm in diameter) onto pegs and turn them to drive a string-and-pulley loop that moves a toy car, demonstrating gear ratios through trial and error</li>
-        <li>I wrote the final report</li>
         <li>At the museum on April 12, 2026, children spent an average of 102 seconds at the exhibit (goal: 90) and used an average of 6 gears (goal: 3); the project cost $111.03 of its $120 budget</li>
       </ul>
       <div class="gallery">
@@ -579,10 +582,10 @@
       </div>
       <p class="entry-role">GE 1501 Cornerstone of Engineering Client Project</p>
       <ul>
+        <li>Our three-person team built a custom strategy game for a client, a civil engineering student interested in transportation and the Netherlands, within a $100 budget and an eight-week timeline; we translated his needs into functions and constraints (2–6 players, 10–15 minute games, portability, and durability) and ranked design traits using a pairwise comparison chart</li>
         <li>I built all of the electronics hardware, wiring three push buttons, six LEDs arranged as two traffic lights, an addressable LED strip, and a 16x2 I2C LCD to a Raspberry Pi Pico housed in a laser-cut wooden box, and I helped write the code</li>
         <li>The client chose our project as his favorite</li>
         <li>The system runs 45-second timed rounds, displaying the countdown on the LCD and traffic lights, while the LED strip randomly selects which of four trivia decks each team answers from</li>
-        <li>Our three-person team built it for a client, a civil engineering student interested in transportation and the Netherlands, within a $100 budget and an eight-week timeline; we translated his needs into functions and constraints (2–6 players, 10–15 minute games, portability, and durability) and ranked design traits using a pairwise comparison chart</li>
       </ul>
       <div class="gallery">
         <figure><img src="images/train-game-design.png" alt="Train Game digital design" onclick="openLightbox(this)"><figcaption>Digital design render</figcaption></figure>
@@ -598,13 +601,34 @@
 
     <div class="entry">
       <div class="entry-header">
+        <h3>Autonomous Underwater Vehicle Challenge — MIT Beaver Works Summer Institute</h3>
+        <span class="date">July – August 2024</span>
+      </div>
+      <p class="entry-role">Instructor: Mohamed Saad Ibn Seddik</p>
+      <ul>
+        <li>In MIT Beaver Works Summer Institute's four-week Autonomous Underwater Vehicle Challenge, my team programmed a BlueROV2 to navigate a pool without human control</li>
+        <li>Using Python and ROS, we built separate nodes for depth control, lane following, and AprilTag detection, each feeding PID controllers that drove the vehicle's thrusters</li>
+        <li>To help the AUV tell which side of the pool it was on, we placed AprilTag markers (similar to QR codes) on every side of the pool, anchoring them underwater by attaching them to rocks we found outside MIT, which earned our team the Master Navigator Award</li>
+        <li>In the final challenge, our AUV went head-to-head against another team's: both vehicles searched the pool, and the first to detect the other with its camera flashed its lights; our AUV found the other first</li>
+      </ul>
+      <div class="gallery">
+        <figure><img src="images/bwsi-apriltags-rocks.jpg" alt="AprilTag markers next to the rocks used to anchor them underwater" onclick="openLightbox(this)"><figcaption>AprilTags anchored with rocks</figcaption></figure>
+        <figure><img src="images/bwsi-pool-test.jpg" alt="BlueROV2 and tether reel beside the pool during testing" onclick="openLightbox(this)"><figcaption>Pool testing</figcaption></figure>
+        <figure><img src="images/bwsi-auv.jpg" alt="Inside the BlueROV2 underwater vehicle" onclick="openLightbox(this)"><figcaption>Inside the BlueROV2</figcaption></figure>
+        <figure><img src="images/bwsi-team.jpg" alt="Team photo with the AUV" onclick="openLightbox(this)"><figcaption>Our team with the AUV</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
         <h3>GEO Engineers — Boston, MA</h3>
         <span class="date">April – June 2025</span>
       </div>
       <p class="entry-role">Engineering Intern</p>
       <ul>
-        <li>Contributed to geotechnical engineering projects at a Boston-based firm across both office and field work</li>
-        <li>Conducted soil and material sampling, site investigations, boring logs, and geotechnical drawings</li>
+        <li>GEO Engineers is a geotechnical and environmental engineering firm serving transportation, development, industrial, and natural-resources projects nationwide, and its Boston team specializes in complex urban development projects</li>
+        <li>I contributed to geotechnical engineering projects across both office and field work</li>
+        <li>My work included soil and material sampling, site investigations, boring logs, and geotechnical drawings</li>
       </ul>
       <div class="gallery">
         <figure><img src="images/geo-1.jpg" alt="Field work" onclick="openLightbox(this)"><figcaption>Field work</figcaption></figure>
