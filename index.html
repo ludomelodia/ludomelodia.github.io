@@ -640,16 +640,21 @@
     <div class="entry">
       <div class="entry-header">
         <h3>Intelligent Urban Infrastructure — Independent Research</h3>
-        <span class="date">2022 – 2024</span>
+        <span class="date">2022 – Present</span>
       </div>
       <p class="entry-role">IoT Traffic-Light Model</p>
       <ul>
-        <li>Designed and built an IoT traffic-light model over two years to reduce the energy wasted by traffic lights that are always on</li>
+        <li>Since 2022, I have been designing and building an IoT traffic-light model to reduce the energy wasted by traffic lights that are always on</li>
         <li>Year 1: built a two-light intersection controlled by an Arduino Uno WiFi Rev2 that turns on only when a smartphone, representing a car, connects over Bluetooth Low Energy; across 10 trials, I recorded connection and disconnection distances, and the lights turned on and off with every successful connection</li>
         <li>Year 2: added a pedestrian component, in which a second Arduino with a GPS module sends its speed to the traffic light over WiFi using MQTT, and the light gives the green first to the pedestrian or the vehicle depending on the speed it receives; the model worked without error in all 20 trials</li>
         <li>Placed 3rd (2023) and 2nd (2024) at the Massachusetts Regional Science Fair, received the US Air Force Award, and advanced to state competitions</li>
+        <li>I am continuing to expand this research; I recently built an interactive simulation of a demand-responsive intersection that stays dark until a connected car or pedestrian is in range, using my prototype's measured Bluetooth range and GPS speed data to compare its energy use against an always-on signal</li>
       </ul>
+      <div class="gallery">
+        <figure><img src="images/traffic-prototype.jpg" alt="Year 1 traffic-light prototype: Arduino Uno WiFi wired to red, yellow, and green LEDs on a breadboard" onclick="openLightbox(this)"><figcaption>Year 1 prototype</figcaption></figure>
+      </div>
       <div class="pdf-links">
+        <a href="https://ludomelodia.github.io/smart-intersection/" target="_blank">🚦 Live Simulation</a>
         <a href="images/traffic-light-research-year1.pdf" target="_blank">📄 Year 1 Research Paper</a>
         <a href="images/traffic-light-research-2024.pdf" target="_blank">📄 Year 2 Research Paper</a>
       </div>
