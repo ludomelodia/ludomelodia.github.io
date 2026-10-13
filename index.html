@@ -455,7 +455,7 @@
       </div>
       <p class="edu-degree">Graduated with High Honors</p>
       <div class="edu-details">
-        <strong>Leadership:</strong> Student Body President, Co-Founder of Global Citizens Committee, Student Mentor &amp; Retreat Leader, Admissions Ambassador<br>
+        <strong>Leadership:</strong> Student Body President, Class Vice President, Co-Founder of Global Citizens Committee, Student Mentor &amp; Retreat Leader, Admissions Ambassador, Eucharistic Minister<br>
         <strong>Athletics:</strong> Varsity Cross Country (4 years), Varsity Track and Field<br>
         <strong>Tutoring:</strong> Math Tutor, Writing Tutor
       </div>
@@ -472,7 +472,6 @@
         <div class="skill-tags">
           <span class="skill-tag">C++</span>
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">JavaScript</span>
           <span class="skill-tag">Arduino</span>
           <span class="skill-tag">MATLAB</span>
         </div>
@@ -540,30 +539,36 @@
         <h3>Forge: a Sherman Center Program, Northeastern University</h3>
         <span class="date">September 2026 – Present</span>
       </div>
-      <p class="entry-role">Hardware Product Lab Member — Cooking Robot</p>
+      <p class="entry-role">Hardware Product Lab Member, Team Electrical Engineer — Cooking Robot</p>
       <ul>
-        <li>Forge is a student-led program within Northeastern's Michael J. and Ann Sherman Center for Engineering Entrepreneurship Education, where teams of six take a product from initial concept to physical prototype in a single semester</li>
-        <li>Conceived the product concept for our team: an automated ingredient dispensing system that measures preset quantities at the press of a button, designed to simplify home cooking</li>
-        <li>Serving as the team's designated Electrical Engineer, designing PCB schematics in KiCad, 3D-modeling enclosures in SolidWorks, and programming embedded control logic in Arduino</li>
+        <li>As the team's electrical engineer, I program the Arduino, assemble the electronics, and work on PCB design in KiCad to customize the board</li>
+        <li>Our team is building a cooking robot that stores dry ingredients and, at the press of a button, dispenses them in preset measurements, so there is no need to measure each ingredient out by hand; I came up with the product idea</li>
+        <li>Forge is Northeastern's student-run product development studio, where members work on a semester-long team project spanning electronics, CAD, and coding</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <h3>Interactive Children's Museum Exhibit — Northeastern University</h3>
+        <h3>Motion Station: Boston Children's Museum Exhibit — Northeastern University</h3>
         <span class="date">January – May 2026</span>
       </div>
-      <p class="entry-role">Boston Children's Museum — Fun Labs</p>
+      <p class="entry-role">GE 1502 Team Project — Client: Boston Children's Museum</p>
       <ul>
-        <li>Built an interactive exhibit as part of Northeastern's Fun Labs program, where first-year engineering teams design and code original electronic games that are exhibited at the Boston Children's Museum for families and kids to play-test</li>
-        <li>Designed and programmed the game logic in Python, integrating break-beam sensors, speakers, and LED arrays to teach mechanical engineering concepts to young visitors through hands-on play</li>
-        <li>Fabricated custom gears and pulley housings using laser cutting and 3D printing in SolidWorks, assembling the complete physical exhibit from scratch</li>
+        <li>I built all of the electronics and wrote the MicroPython code: a Raspberry Pi Pico polls a break beam sensor every 50 ms, and when the car passes, it streams a WAV file I created of "Life is a Highway" over I2S to a MAX98357A class D amplifier and speaker while animating an addressable LED strip, updating the LEDs every 8th audio chunk so the Pico isn't overloaded</li>
+        <li>I designed the enclosures, gears, and internal supports in AutoCAD, then laser-cut, painted, and assembled the Italy-themed box and all of its components</li>
+        <li>The Boston Children's Museum commissioned our four-person team to design an interactive exhibit that teaches mechanical engineering to children ages 4–8, themed around Europe and the Pixar film <i>Cars</i></li>
+        <li>Children mount nine interchangeable plywood spur gears (4, 9, and 14 cm in diameter) onto pegs and turn them to drive a string-and-pulley loop that moves a toy car, demonstrating gear ratios through trial and error</li>
+        <li>I wrote the final report</li>
+        <li>At the museum on April 12, 2026, children spent an average of 102 seconds at the exhibit (goal: 90) and used an average of 6 gears (goal: 3); the project cost $111.03 of its $120 budget</li>
       </ul>
       <div class="gallery">
-        <figure><img src="images/museum-exhibit.jpg" alt="Motion Station exhibit at Boston Children's Museum" onclick="openLightbox(this)"><figcaption>Full exhibit at the museum</figcaption></figure>
-        <figure><img src="images/museum-closeup.png" alt="Motion Station gears and toy cars close-up" onclick="openLightbox(this)"><figcaption>Gears and toy cars close-up</figcaption></figure>
-        <figure><img src="images/museum-gears.jpg" alt="3D-printed gears detail" onclick="openLightbox(this)"><figcaption>3D-printed gears</figcaption></figure>
+        <figure><img src="images/museum-exhibit.jpg" alt="Motion Station exhibit at Boston Children's Museum" onclick="openLightbox(this)"><figcaption>Exhibit at the museum</figcaption></figure>
+        <figure><img src="images/museum-closeup.png" alt="Motion Station gears and toy cars close-up" onclick="openLightbox(this)"><figcaption>Gears and toy cars</figcaption></figure>
+        <figure><img src="images/museum-gears.jpg" alt="Interchangeable gears on the exhibit" onclick="openLightbox(this)"><figcaption>Interchangeable gears</figcaption></figure>
         <figure><img src="images/museum-breadboard.png" alt="Breadboard prototype with LED strip and speaker" onclick="openLightbox(this)"><figcaption>Electronics prototype</figcaption></figure>
+      </div>
+      <div class="pdf-links">
+        <a href="images/motion-station-final-report.pdf" target="_blank">📄 Final Report</a>
       </div>
     </div>
 
@@ -572,11 +577,12 @@
         <h3>The Train Game — Northeastern University</h3>
         <span class="date">October – December 2025</span>
       </div>
-      <p class="entry-role">Cornerstone of Engineering Client Project</p>
+      <p class="entry-role">GE 1501 Cornerstone of Engineering Client Project</p>
       <ul>
-        <li>Designed and built an interactive Netherlands-themed board game for a real client as the capstone project in Cornerstone of Engineering, Northeastern's required first-year engineering design course</li>
-        <li>Programmed the game logic in C on a Raspberry Pi Pico with embedded electronics including LEDs, buttons, and a speaker, and designed the control enclosure in AutoCAD</li>
-        <li>Selected as the client's favorite project among all competing teams at the end-of-semester Expo</li>
+        <li>I built all of the electronics hardware, wiring three push buttons, six LEDs arranged as two traffic lights, an addressable LED strip, and a 16x2 I2C LCD to a Raspberry Pi Pico housed in a laser-cut wooden box, and I helped write the code</li>
+        <li>The client chose our project as his favorite</li>
+        <li>The system runs 45-second timed rounds, displaying the countdown on the LCD and traffic lights, while the LED strip randomly selects which of four trivia decks each team answers from</li>
+        <li>Our three-person team built it for a client, a civil engineering student interested in transportation and the Netherlands, within a $100 budget and an eight-week timeline; we translated his needs into functions and constraints (2–6 players, 10–15 minute games, portability, and durability) and ranked design traits using a pairwise comparison chart</li>
       </ul>
       <div class="gallery">
         <figure><img src="images/train-game-design.png" alt="Train Game digital design" onclick="openLightbox(this)"><figcaption>Digital design render</figcaption></figure>
@@ -585,37 +591,39 @@
         <figure><img src="images/train-game-final.jpg" alt="Train Game final board with controls" onclick="openLightbox(this)"><figcaption>Final board with controls</figcaption></figure>
         <figure><img src="images/train-game-demo.jpg" alt="Train Game presentation demo" onclick="openLightbox(this)"><figcaption>Presentation demo</figcaption></figure>
       </div>
+      <div class="pdf-links">
+        <a href="images/train-game-design-memo.pdf" target="_blank">📄 Design Memo</a>
+      </div>
     </div>
 
     <div class="entry">
       <div class="entry-header">
-        <h3>GeoEngineers — Boston, MA</h3>
+        <h3>GEO Engineers — Boston, MA</h3>
         <span class="date">April – June 2025</span>
       </div>
       <p class="entry-role">Engineering Intern</p>
       <ul>
-        <li>Interned at GeoEngineers, an employee-owned consulting firm of over 400 engineers specializing in geotechnical engineering, environmental science, and ecological services</li>
-        <li>Performed geotechnical field investigations including soil sampling, boring logs, groundwater monitoring, and site surveys across multiple project locations</li>
-        <li>Produced geotechnical drawings and material testing reports using AutoCAD, supporting active civil engineering projects</li>
+        <li>Contributed to geotechnical engineering projects at a Boston-based firm across both office and field work</li>
+        <li>Conducted soil and material sampling, site investigations, boring logs, and geotechnical drawings</li>
       </ul>
       <div class="gallery">
-        <figure><img src="images/geo-1.jpg" alt="Site investigation with monitoring well" onclick="openLightbox(this)"><figcaption>Monitoring well inspection</figcaption></figure>
-        <figure><img src="images/geo-2.jpg" alt="Groundwater monitoring equipment at field site" onclick="openLightbox(this)"><figcaption>Groundwater sampling equipment</figcaption></figure>
-        <figure><img src="images/geo-3.jpg" alt="Excavator at field investigation site" onclick="openLightbox(this)"><figcaption>Field investigation site</figcaption></figure>
+        <figure><img src="images/geo-1.jpg" alt="Field work" onclick="openLightbox(this)"><figcaption>Field work</figcaption></figure>
+        <figure><img src="images/geo-2.jpg" alt="Sampling equipment at a field site" onclick="openLightbox(this)"><figcaption>Sampling equipment</figcaption></figure>
+        <figure><img src="images/geo-3.jpg" alt="Excavator at a field site" onclick="openLightbox(this)"><figcaption>On site</figcaption></figure>
       </div>
     </div>
 
     <div class="entry">
       <div class="entry-header">
         <h3>Intelligent Urban Infrastructure — Independent Research</h3>
-        <span class="date">September 2022 – Present</span>
+        <span class="date">2022 – 2024</span>
       </div>
-      <p class="entry-role">IoT Traffic-Light Optimization</p>
+      <p class="entry-role">IoT Traffic-Light Model</p>
       <ul>
-        <li>Independently designed and built a wireless IoT traffic-light prototype using Arduino (C++), incorporating GPS, Bluetooth (BLE), and MQTT to detect vehicles and pedestrians by speed and dynamically adjust signal timing to reduce energy waste and improve safety</li>
-        <li>Tested the system across 20+ controlled trials, measuring energy savings and intersection throughput against fixed-timing baselines</li>
-        <li>Placed 3rd (2023) and 2nd (2024) at the Massachusetts Regional Science Fair, received the US Air Force Award, and advanced to state-level competitions both years</li>
-        <li>Extended the project into an interactive agent-based simulation in JavaScript that models a live intersection, allowing users to compare adaptive and fixed signal strategies in real time</li>
+        <li>Designed and built an IoT traffic-light model over two years to reduce the energy wasted by traffic lights that are always on</li>
+        <li>Year 1: built a two-light intersection controlled by an Arduino Uno WiFi Rev2 that turns on only when a smartphone, representing a car, connects over Bluetooth Low Energy; across 10 trials, I recorded connection and disconnection distances, and the lights turned on and off with every successful connection</li>
+        <li>Year 2: added a pedestrian component, in which a second Arduino with a GPS module sends its speed to the traffic light over WiFi using MQTT, and the light gives the green first to the pedestrian or the vehicle depending on the speed it receives; the model worked without error in all 20 trials</li>
+        <li>Placed 3rd (2023) and 2nd (2024) at the Massachusetts Regional Science Fair, received the US Air Force Award, and advanced to state competitions</li>
       </ul>
       <div class="pdf-links">
         <a href="images/traffic-light-research-year1.pdf" target="_blank">📄 Year 1 Research Paper</a>
@@ -639,9 +647,9 @@
           </div>
           <p class="entry-role">Makerspace Assistant — Red Vest Program</p>
           <ul>
-            <li>Train first-year engineering students on safe operation of 3D printers, laser cutters, woodshop equipment, and hand tools in the First-Year Engineering Learning &amp; Innovation Center (FYELIC) on the 3rd floor of Snell Engineering</li>
-            <li>Serve as part of the Red Vest Program, bridging first-year students and the engineering program by providing hands-on fabrication guidance and troubleshooting support during Cornerstone of Engineering lab sessions</li>
-            <li>Maintain equipment, enforce safety protocols, and help students translate their CAD designs into physical prototypes for course projects</li>
+            <li>Train first-year engineering students on safe operation of 3D printers, laser cutters, woodshop equipment, and hand tools in the First-Year Engineering Learning &amp; Innovation Center (FYELIC)</li>
+            <li>Help students with their first-year engineering coursework, including MATLAB, Python, Raspberry Pi, Onshape, AutoCAD, and ethics</li>
+            <li>Maintain equipment, enforce safety protocols, and help students with their course projects</li>
           </ul>
         </div>
       </div>
@@ -657,9 +665,10 @@
           </div>
           <p class="entry-role">Husky Ambassador</p>
           <ul>
-            <li>Selected into a group of approximately 200 undergraduate student leaders who represent Northeastern to prospective students and families year-round</li>
+            <li>Selected as one of the undergraduate student leaders who represent Northeastern to prospective students and families year-round</li>
             <li>Completed a four-week training program covering campus history, academic programs, and public speaking before becoming a certified tour guide</li>
-            <li>Lead 45–60 minute campus tours through residence halls, the student center, recreation facilities, research spaces, and main quads, alongside admissions information sessions</li>
+            <li>Lead 60–75 minute campus tours for prospective students and families</li>
+            <li>Draw on leadership, concise communication, and storytelling to keep tour groups engaged</li>
           </ul>
         </div>
       </div>
