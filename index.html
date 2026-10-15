@@ -325,6 +325,15 @@
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
     }
+    .gallery-small {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      margin-top: 0.6rem;
+    }
+    .gallery-small img {
+      height: 85px;
+      object-fit: contain;
+      background: var(--white);
+    }
     .gallery img:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 12px rgba(212, 86, 122, 0.15);
@@ -652,6 +661,12 @@
       </ul>
       <div class="gallery">
         <figure><img src="images/traffic-prototype.jpg" alt="Year 1 traffic-light prototype: Arduino Uno WiFi wired to red, yellow, and green LEDs on a breadboard" onclick="openLightbox(this)"><figcaption>Year 1 prototype</figcaption></figure>
+      </div>
+      <div class="gallery gallery-small">
+        <figure><img src="images/traffic-y1-connect.jpg" alt="Chart of Bluetooth connection distance per trial" onclick="openLightbox(this)"><figcaption>Year 1: connection distance</figcaption></figure>
+        <figure><img src="images/traffic-y1-disconnect.jpg" alt="Chart of Bluetooth disconnection distance per trial" onclick="openLightbox(this)"><figcaption>Year 1: disconnection distance</figcaption></figure>
+        <figure><img src="images/traffic-y2-pedestrian.jpg" alt="Chart of GPS-reported speed in pedestrian trials" onclick="openLightbox(this)"><figcaption>Year 2: pedestrian speed</figcaption></figure>
+        <figure><img src="images/traffic-y2-vehicle.jpg" alt="Chart of GPS-reported speed in vehicle trials" onclick="openLightbox(this)"><figcaption>Year 2: vehicle speed</figcaption></figure>
       </div>
       <div class="pdf-links">
         <a href="https://ludomelodia.github.io/smart-intersection/" target="_blank">🚦 Live Simulation</a>
